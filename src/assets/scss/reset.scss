@@ -1,0 +1,116 @@
+.container-fluid {
+  padding-left: 10em;
+  padding-right: 10em;
+
+  @media only screen and (max-width: 640px) {
+    padding-left: 4.7em;
+    padding-right: 4.7em;
+  }
+
+  @media only screen and (max-width: 480px) {
+    padding-left: 2.7em;
+    padding-right: 2.7em;
+  }
+}
+
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before,
+.custom-switch .custom-control-label::before {
+  top: -0.33rem;
+  left: -3.25rem;
+  width: 4.25rem;
+  height: 2.25rem;
+  pointer-events: all;
+  border-radius: 1.5rem;
+  background-color: rgba(152, 147, 164, 0.16);
+  border: none;
+  cursor: pointer;
+}
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before,
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before,
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: $primary-color;
+}
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before,
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: $primary-color;
+  background-color: $primary-color;
+}
+
+.custom-switch .custom-control-label::after {
+  top: calc(-0.33rem + 2px);
+  left: calc(-3.25rem + 2px);
+  width: calc(2.25rem - 4px);
+  height: calc(2.25rem - 4px);
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #fff;
+  transform: translateX(2rem);
+}
+
+.modal-dialog {
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.slick-slider {
+  .slick-list {
+    padding-top: 10px !important;
+  }
+  button.slick-arrow {
+    color: white;
+    &.slick-prev {
+      left: -10px;
+      z-index: 1;
+    }
+    &.slick-next {
+      right: 0;
+    }
+
+    &:before {
+      color: var(--gray-color--5);
+      opacity: 1;
+    }
+  }
+}
+
+input {
+  border-color: #367c92 !important;
+}
+.modal-backdrop {
+  background-color: var(--primary-color);
+  opacity: 0.72;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem !important;
+}
+
+.modal-header {
+  border-bottom-color: #367c92;
+}
+
+.modal-footer {
+  @media only screen and (max-width: 991px) {
+    flex-direction: column-reverse;
+    padding: 0 2rem 1rem;
+  }
+
+  button {
+    width: 40%;
+    @media only screen and (max-width: 991px) {
+      width: 100% !important;
+    }
+  }
+}

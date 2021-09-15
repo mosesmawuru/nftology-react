@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import 'margin_padding_helper_mixin';
+@import 'spacing';
+@import 'helper';
+@import 'colors';
+@import 'fonts';
+@import 'reset';
+.app-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100% !important;
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-content {
+  background-color: $back-main-color;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: auto;
+}

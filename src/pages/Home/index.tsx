@@ -3,7 +3,12 @@ import React, { Fragment } from 'react'
 const Home: React.FC = () => {
   return (
     <Fragment>
-      <h6>Content</h6>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+      <h1>Home</h1>
+
     </Fragment>
   )
 }

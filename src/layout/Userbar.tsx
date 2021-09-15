@@ -1,10 +1,11 @@
-import React, { Fragment } from 'react'
+import React from 'react'
+import "../assets/scss/page/userbar.scss"
 
 const Userbar: React.FC = () => {
   return (
-    <Fragment>
+    <div className="userbar">
         <h6>Userbar</h6>
-    </Fragment>
+    </div>
   )
 }
 

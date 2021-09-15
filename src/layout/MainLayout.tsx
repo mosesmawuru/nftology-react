@@ -1,16 +1,20 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
-import Header from './Header'
-// import Sidebar from './Sidebar';
-// import Userbar from './Userbar';
+// import Header from './Header'
+import Userbar from './Userbar';
+import Sidebar from './Sidebar';
 
-const MainLayout: React.FC = () => {
+type MainLayoutProps = { children: any };
+const MainLayout = ({children}:MainLayoutProps) => {
   return (
-    <Fragment>
-      <div>
-        <Header />
+      <div className="main-container">
+        <Sidebar/>
+        <div className="main-content">
+          {/* <Header/> */}
+          {children}
+        </div>
+        <Userbar/>
       </div>
-    </Fragment>
   )
 }
 

@@ -1,0 +1,170 @@
+$primary-color: #10889d;
+$page-background-color: #ffffff;
+$white-color: #fff;
+$black-color: #000000;
+$white-btn-text-color: #bfb8c5;
+$white-btn-border-color: #bfb8c5;
+
+/* main colors #998EA3 */
+$color-primary: #10889d;
+$color-primary-light: color-mod($color-primary tint(15%));
+$color-primary-dark: color-mod($color-primary shade(15%));
+$color-primary-bg: color-mod($color-primary alpha(20%));
+
+$color-accent: #f5414f;
+$color-accent-light: color-mod($color-accent tint(15%));
+$color-accent-dark: color-mod($color-accent shade(10%));
+$color-accent-bg: color-mod($color-accent alpha(20%));
+$back-main-color: #f5f5fb;
+// shades - generated using chroma.js - 12 steps
+$black: #1d1d21;
+$gray-10: #2e2e31;
+$gray-6: #7b7a7d;
+$gray-4: #a5a5a6;
+$gray-3: #bbbbbc;
+$gray-2: #d1d0d2;
+$gray-1: #e8e7e8;
+$white: white;
+
+/* feedback */
+$color-success: #88c459;
+$color-error: #f5414f;
+$color-warning: #ffd137;
+
+/* typography */
+$color-header: #9993a5;
+$color-text: $gray-10;
+$color-text-heading: $black;
+$color-text-subtle: $gray-6;
+$color-link: $color-primary;
+$color-link-visited: $color-primary-dark;
+$color-mark: $color-accent-bg;
+$color-blockquote-border: $gray-2;
+
+/* border */
+$color-border: $gray-2;
+
+/* body */
+$color-body: $white;
+
+/* forms */
+$form-element-border: $color-border;
+$form-element-border-focus: $color-primary;
+$form-element-border-error: $color-error;
+$form-element-bg: $white;
+$form-text-placeholder: $gray-4;
+
+/* buttons */
+$btn-primary-bg: $color-primary;
+$btn-primary-hover: $color-primary-light;
+$btn-primary-active: $color-primary-dark;
+$btn-primary-label: $white;
+
+/* icons */
+$color-icon-primary: $gray-4;
+$color-icon-secondary: inherit;
+:root {
+  --primary-color: #10889d;
+  --secondary-color: #00011d;
+  --gray-color--1: #7f7f8d;
+  --gray-color--2: #c4c4c4;
+  --gray-color--3: #cce6ea;
+  --gray-color--4: #e3e4eb;
+  --gray-color--5: #3d9eaf;
+  --gray-color--6: #1fd0b9;
+  --dark-purple-color: #1b064b;
+  --light-purple-color: #636bcb;
+  --light-cyan-color: #87c3ce;
+  --purple-color: #3aeca3;
+  --white-color: #ffffff;
+}
+
+.bg-primary-color {
+  background: #10889d;
+}
+
+.text-primary-color {
+  color: #10889d;
+}
+
+.bg-secondary-color {
+  background: #00011d;
+}
+
+.text-secondary-color {
+  color: #00011d;
+}
+
+.bg-gray-color--1 {
+  background: #7f7f8d;
+}
+
+.text-gray-color--1 {
+  color: #7f7f8d;
+}
+
+.bg-gray-color--2 {
+  background: #c4c4c4;
+}
+
+.text-gray-color--2 {
+  color: #c4c4c4;
+}
+
+.bg-gray-color--3 {
+  background: #cce6ea;
+}
+
+.text-gray-color--3 {
+  color: #cce6ea;
+}
+
+.bg-gray-color--4 {
+  background: #e3e4eb;
+}
+.bg-white-color {
+  background-color: #ffffff;
+}
+
+.text-gray-color--4 {
+  color: #e3e4eb;
+}
+.bg-gray-color--5 {
+  background: #3d9eaf;
+}
+
+.text-gray-color--5 {
+  color: #3d9eaf;
+}
+
+.bg-gray-color--6 {
+  background: #1fd0b9;
+}
+
+.text-gray-color--6 {
+  color: #1fd0b9;
+}
+
+.bg-dark-purple-color {
+  background: #1b064b;
+}
+
+.text-dark-purple-color {
+  color: #1b064b;
+}
+
+.bg-light-purple-color {
+  background: #636bcb;
+}
+
+.text-light-purple-color {
+  color: #636bcb;
+}
+
+.bg-purple-color {
+  background: #3a0ca3;
+}
+
+.text-purple-color {
+  color: #3a0ca3;
+}

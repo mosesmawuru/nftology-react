@@ -1,25 +1,37 @@
 import React, { Suspense } from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-
+import { BrowserRouter, Switch, Route,Redirect } from 'react-router-dom'
+// @import scss
+import "./assets/scss/app.scss"
 // @import component
 import Loading from "./components/Loading";
 // @import layout
 import MainLayout from './layout/MainLayout';
 // @import page
-// const Home = React.lazy(() => import('./pages/Home'));
-// const Header = React.lazy(() => import('./layout/Header'));
+const Home = React.lazy(() => import('./pages/Home'));
+const Discover = React.lazy(() => import('./pages/Discover'));
 
-// const Sidebar = React.lazy(() => import('./layout/Sidebar'));
-
-// const Userbar = React.lazy(() => import('./layout/Userbar'));
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>  
-      <div className='container'>
+      <div className='app-container'>
         <Suspense fallback={<Loading/>}>
-          <Switch>     
-            <Route path='/' component={MainLayout} />
+          <Switch>   
+            <Redirect exact from="/" to="/home"/>  
+            <Route path="/home"   
+              render={() => (
+                <MainLayout>
+                  <Home/>
+                </MainLayout>
+              )} 
+            />
+            <Route path="/discover"   
+              render={() => (
+                <MainLayout>
+                  <Discover/>
+                </MainLayout>
+              )} 
+            />
           </Switch>
         </Suspense>
       </div>

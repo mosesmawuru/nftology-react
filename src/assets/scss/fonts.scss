@@ -1,0 +1,247 @@
+/* Text variables */
+$font-primary: "Montserrat", sans-serif;
+$text-base-size: 1em;
+$text-scale-ratio: 1.2;
+$text-xxs: 1em / ($text-scale-ratio * 3);
+$text-xs: 1em / ($text-scale-ratio * 2);
+$text-sm: 1em / $text-scale-ratio;
+$text-md: 1em * $text-scale-ratio;
+$text-lg: 1em * $text-scale-ratio * 2;
+$text-xl: 1em * $text-scale-ratio * 3;
+$text-xxl: 1em * $text-scale-ratio * 4;
+$text-xxxl: 1em * $text-scale-ratio * 5;
+$heading-line-height: 1.2;
+$body-line-height: 1.4;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: Montserrat, sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+.font-color-primary {
+  color: #9993a5;
+}
+
+h1,
+h2,
+h3,
+h4,
+form legend {
+  // color: $color-text-heading !important;
+  margin-bottom: $space-xxs !important;
+  line-height: $heading-line-height !important;
+}
+
+/* text size */
+.text-xxxl {
+  font-size: $text-xxxl !important;
+}
+
+h1,
+.text-xxl {
+  font-size: $text-xxl !important;
+}
+
+h2,
+.text-xl {
+  font-size: $text-xl !important;
+}
+
+h3,
+.text-lg {
+  font-size: $text-lg !important;
+}
+
+h4,
+.text-md {
+  font-size: $text-md !important;
+}
+
+.text-sm,
+small {
+  font-size: $text-sm !important;
+}
+
+.text-xs {
+  font-size: $text-xs;
+}
+
+.text-xxs {
+  font-size: $text-xxs !important;
+}
+
+p {
+  line-height: $body-line-height;
+}
+
+b,
+strong,
+.bold {
+  font-weight: bold !important;
+}
+
+.text-container {
+  h2,
+  h3,
+  h4 {
+    margin-top: $space-sm;
+  }
+
+  ul,
+  ol,
+  p {
+    margin-bottom: $space-md;
+  }
+
+  ul,
+  ol {
+    list-style-position: outside;
+    padding-left: 24px;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul li,
+  ol li {
+    line-height: $body-line-height;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  u {
+    text-decoration: underline;
+  }
+}
+
+/* utility classes */
+.truncate {
+  // truncate text if it exceeds parent
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.font-normal {
+  font-weight: normal !important;
+}
+
+.big-title {
+  font-size: 2.6em !important;
+  font-weight: 600 !important;
+}
+
+.page-title {
+  font-size: 2.3em !important;
+  font-weight: 600 !important;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.4em !important;
+  }
+}
+
+.page-sub-title {
+  font-size: 2.3em !important;
+  font-weight: 600 !important;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.7em !important;
+    margin-top: 1.2em !important;
+  }
+}
+
+.button-label {
+  font-size: 1.15em !important;
+  @media only screen and (max-width: 768px) {
+    font-size: 0.8em !important;
+  }
+  font-weight: 500 !important;
+}
+
+.paragraph {
+  font-size: 1em !important;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 0.8em !important;
+  }
+  font-weight: 500 !important;
+}
+
+.big-sub-title {
+  font-size: 1.7em !important;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1em !important;
+  }
+  font-weight: 600 !important;
+}
+
+.sub-title {
+  font-size: 1em !important;
+  @media only screen and (max-width: 768px) {
+    font-size: 0.8em !important;
+  }
+  font-weight: 600 !important;
+}
+
+.label {
+  font-size: 0.7em !important;
+  font-weight: 500 !important;
+}
+
+.smallest-label {
+  font-size: 0.65em !important;
+  font-weight: 500 !important;
+}
+
+.tab-label {
+  font-size: 1.15em !important;
+  font-weight: 700 !important;
+}
+
+.font-weight-500 {
+  font-weight: 500 !important;
+}
+
+.font-weight-600 {
+  font-weight: 600 !important;
+}
+
+.font-size-9 {
+  font-size: 9px !important;
+}
+
+.font-size-10 {
+  font-size: 10px !important;
+}
+
+.font-size-12 {
+  font-size: 12px !important;
+}
+
+.text-decoration-underline {
+  text-decoration: underline;
+}
+.justimargin {
+  padding: 0 5px 10px 5px;
+}
+.mobilebutton {
+  font-weight: 600 !important;
+}

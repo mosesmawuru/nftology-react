@@ -1,38 +1,39 @@
-import React from "react";
+import React from 'react'
 
-
-type CustomSVGProps = { border: string;
-    color: string;
-    // children:any;
-    height: string;
-    onClick: () => void;
-    radius: string
-    width: string};
-const Button = ({ 
-    border,
-    color,
-    // children,
-    height,
-    onClick, 
-    radius,
-    width
-  }:CustomSVGProps) => { 
+type CustomSVGProps = {
+  border: string
+  color: string
+  value: string
+  height: string
+  onClick: () => void
+  radius: string
+  width: string
+}
+const Button = ({
+  border,
+  color,
+  value,
+  height,
+  onClick,
+  radius,
+  width,
+}: CustomSVGProps) => {
   return (
-    <button 
+    <button
       type="button"
       onClick={onClick}
       style={{
-         backgroundColor: color,
-         border,
-         borderRadius: radius,
-         height,
-         width
+        backgroundColor: color,
+        border,
+        borderRadius: radius,
+        height,
+        width,
       }}
     >
-        Hello
-    {/* {children} */}
+      {/* Hello */}
+      {value}
     </button>
-  );
+  )
 }
 
-export default Button;
+export default Button

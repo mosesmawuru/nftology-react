@@ -10,7 +10,7 @@ $color-primary: #10889d;
 $color-primary-light: color-mod($color-primary tint(15%));
 $color-primary-dark: color-mod($color-primary shade(15%));
 $color-primary-bg: color-mod($color-primary alpha(20%));
-
+$color-3d: #902fff;
 $color-accent: #f5414f;
 $color-accent-light: color-mod($color-accent tint(15%));
 $color-accent-dark: color-mod($color-accent shade(10%));

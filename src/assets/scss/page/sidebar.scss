@@ -6,7 +6,34 @@
 @import '../fonts';
 @import '../reset';
 .sidebar {
+  background-color: $white-color;
   width: 331px;
+  height: 100;
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+
+.logo-image {
+  width: 214.64px;
+  height: 65.69px;
+  margin-top: 52px;
+}
+
+.logo-div {
+  width: 331px;
+  height: 200px;
+  position: fixed;
+}
+
+.sidebar_btn {
+  width: 331px;
+  position: fixed;
+  bottom: 51px;
+}
+
+.sidebar_tab {
+  top: 175px;
+  width: 331px;
+  position: fixed;
 }

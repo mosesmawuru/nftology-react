@@ -11,16 +11,28 @@
   box-sizing: border-box;
   width: 100% !important;
 }
+
+.page-container {
+  margin: auto;
+  width: 80%;
+}
+
 .main-container {
+  background-color: $back-main-color;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  // flex-direction: row;
 }
 .main-content {
-  background-color: $back-main-color;
-  width: 100%;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   overflow: auto;
+}
+
+.login_width {
+  width: calc(100vw - (331px * 2));
+}
+
+.logout_width {
+  width: calc(100vw - 331px);
 }

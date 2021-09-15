@@ -1,11 +1,12 @@
-import React, { Fragment } from 'react'
+import React from 'react'
+import '../assets/scss/page/headerbar.scss'
 
 const Header: React.FC = () => {
   return (
-    <Fragment>
-        <h6>Header</h6>
-    </Fragment>
+    <div className="header_bar">
+      <h6>Header</h6>
+    </div>
   )
 }
 
-export default Header;
+export default Header

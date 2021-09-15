@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import '../margin_padding_helper_mixin';
+@import '../spacing';
+@import '../helper';
+@import '../colors';
+@import '../fonts';
+@import '../reset';
+.title_card {
+  background-color: $color-3d;
+  border-color: #707070;
+  border-radius: 12px;
+  padding: 27px 22px 17px 69px;
+  color: $white-color;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.d3Title {
+  font-size: 59px;
+  font-style: bold;
+  font-family: 'Poppins';
+  font-weight: 1000;
+}
+
+.d3Subtitle {
+  font-size: 18px;
+}
+
+.d3Link {
+  text-align: right;
+  font-size: 17px;
+  svg {
+    margin-left: 9px;
+  }
+}
+
+.text_card_group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.card-chart {
+  width: 50%;
+  height: 397px;
+  box-shadow: 0px 30px 60px #0000000f;
+  background-color: $white-color;
+  border-radius: 52px;
+}
+
+.card-show {
+  width: 50%;
+  height: 397px;
+  box-shadow: 0px 30px 60px #0000000f;
+  background-color: $white-color;
+  border-radius: 52px;
+}
+
+.card-text {
+  width: 47%;
+}
+
+.card_txt_title {
+  font-size: $text-lg;
+  font-family: 'Poppins';
+  color: #330b7e;
+  font-weight: 600;
+}
+
+.card_txt_content {
+  svg {
+    margin-right: 6px;
+  }
+  font-size: 20px;
+}
+
+.card_txt_footer {
+  margin-top: 14px;
+}
+
+.counter_card_group {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.counter_card {
+  padding: 15px 55px 35px 55px;
+  border-radius: 138px;
+  background-color: #e5e9fa;
+  box-shadow: 0px 30px 60px #00000073;
+}
+
+.count_number {
+  font-size: 70px;
+  font-weight: 700;
+  font-family: 'Poppins';
+  color: #350098;
+}
+
+.count_description {
+  font-size: 20px;
+  font-family: 'Poppins';
+  color: #350098;
+}
+
+.cards_group {
+  padding: 31px;
+  border-radius: 17px;
+  background-color: #fdfdfe;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  // background-image: url('../../images/detailinfo.png');
+}
+
+.card_title {
+  font-size: 17px;
+  font-family: 'Poppins';
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card_footer_side {
+  margin-top: 18px;
+  border-radius: 23px;
+  background-color: #330b7e;
+  padding: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.miss_message {
+  color: $white-color;
+  font-size: 21px;
+}
+
+.email_input_div {
+  margin-left: 21px;
+}
+
+.email_input {
+  background-color: $white-color;
+  border-radius: 20px;
+}
+
+.child_card {
+  border-radius: 23px;
+  width: 32%;
+  height: 125px;
+  position: relative;
+}
+
+.more_text {
+  svg {
+    margin-left: 5px;
+  }
+}
